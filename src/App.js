@@ -51,10 +51,13 @@ const App = () => {
           stripeKey={process.env.REACT_APP_KEY}
           token={makePayment}
           name={`Buy React cost of ${product.price} $`}
+          panelLabel="Pay "
           amount={product.price * 100}
           // if you want to add shipping address and billing address in payment page
           shippingAddress
           billingAddress
+          alipay
+          bitcoin
         >
           <Button variant="contained" color="primary">
             Buy React in just {product.price} $
